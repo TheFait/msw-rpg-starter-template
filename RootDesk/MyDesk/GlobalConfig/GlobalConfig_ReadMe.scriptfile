@@ -1,0 +1,22 @@
+{
+  "Id": "",
+  "GameId": "",
+  "EntryKey": "scriptfile://22362e9f-5767-4c9d-a026-c51ca2cb2618",
+  "ContentType": "x-mod/scriptfile",
+  "Content": "",
+  "Usage": 0,
+  "UsePublish": 1,
+  "UseService": 0,
+  "CoreVersion": "1.25.0.0",
+  "StudioVersion": "0.1.0.0",
+  "DynamicLoading": 0,
+  "ContentProto": {
+    "Use": "Json",
+    "Json": {
+      "Name": "GlobalConfig_ReadMe",
+      "Id": "22362e9f-5767-4c9d-a026-c51ca2cb2618",
+      "Script": "--[[\n# GlobalConfig\nThis package provides features for managing GlobalConfig.\nGlobalConfig refers to values that are used consistently across all areas and can be dynamically changed using the management tool.\n\n=======================================\n## Features\n\n1. GlobalConfig Management Tool\nYou can load data stored in GlobalDataStorage, save modified data back to GlobalStorage, or reset it using the information from the DataSet.\nNote that reset data will not be reflected in GlobalDataStorage until you click the save button, so make sure to press the save button to apply the changes.\n\n2. Adding New GlobalConfig\nYou can add new GlobalConfig data to the GlobalConfigDataSet.\n\n=======================================\n## Installation\n\nThis package is available for use after import, but some initial setup is required.\n\n1. Admin Permissions Check for Tool Usage\nYou need to check if the user has admin permissions using the Util:IsAdmin function.\n\n2. UI Path Configurations\nYou need to set the spawn paths for the test button UI and the tool UI.\nThe ParentUIPath and ParentUIToolPath can be modified in GlobalConfigSetToolLogic.\nBy default, they are set to \"/ui/DefaultGroup\".\n\n3. DataStorage Name and Tag Configuration\nThe names and tags you are using might overlap with existing ones. You can modify the StorageName and TagName in GlobalConfigLogic.\n\n=======================================\n## Usage\n\nYou can open the tool UI using the F9 key, which allows you to manage GlobalConfig data.\n\nAdd the information for the new GlobalConfig to be added to the GlobalConfigDataSet.\nIf there is no stored value in DataStorage, the default value stored in the DataSet will be used.\nThe Id(Integer)-Name(String) EnumTable of GlobalConfigs is automatically added inside GlobalConfigEnumLogic.\nSince it is not added as a property, use the ToInt/ToString methods.\n\nRefer to the example usage in the DataSet and UIButtonTestWorldBoss Script.\n\n=======================================\n## Cautions\n\nDuplicate IDs are not allowed. If there are duplicate IDs, only the last entry in the DataSet will be visible.\nPreviously saved data may remain if a previously used ID is deleted and then reused.\n\n=======================================\n## Notification Data Structure\n\nId : 6-digit integer\n\nName : string\n\nDefaultValue : string\n\nClientSync : boolean\n\n=======================================\n## License\n\nThis project is licensed under the MIT License.\nYou are free to use, modify, and distribute this project.\n\nHowever, the software is provided \"as is\", without warranty of any kind.\nFor more details, please see the LICENSE.(https://opensource.org/licenses/MIT)\n\n=======================================\n## Happy Coding!\n]]",
+      "ModifyTime": "09/14/2025 22:28:16"
+    }
+  }
+}
