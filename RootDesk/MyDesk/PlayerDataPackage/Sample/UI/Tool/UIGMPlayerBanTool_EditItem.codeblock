@@ -1,7 +1,7 @@
 {
   "Id": "",
   "GameId": "",
-  "EntryKey": "codeblock://b35e5b22-0741-48d1-b508-d4688f3d27b4",
+  "EntryKey": "codeblock://5aa717df-add9-467b-abb3-eecae4d7ab0b",
   "ContentType": "x-mod/codeblock",
   "Content": "",
   "Usage": 0,
@@ -22,10 +22,10 @@
         "Minor": 1
       },
       "Description": "",
-      "Id": "b35e5b22-0741-48d1-b508-d4688f3d27b4",
+      "Id": "5aa717df-add9-467b-abb3-eecae4d7ab0b",
       "Language": 1,
-      "Name": "Util",
-      "Type": 5,
+      "Name": "UIGMPlayerBanTool_EditItem",
+      "Type": 1,
       "Source": 0,
       "Target": null
     }

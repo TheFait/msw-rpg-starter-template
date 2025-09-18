@@ -1,7 +1,7 @@
 {
   "Id": "",
   "GameId": "",
-  "EntryKey": "codeblock://b35e5b22-0741-48d1-b508-d4688f3d27b4",
+  "EntryKey": "codeblock://4465c7c1-3d8d-4651-972c-04a058307015",
   "ContentType": "x-mod/codeblock",
   "Content": "",
   "Usage": 0,
@@ -22,10 +22,10 @@
         "Minor": 1
       },
       "Description": "",
-      "Id": "b35e5b22-0741-48d1-b508-d4688f3d27b4",
+      "Id": "4465c7c1-3d8d-4651-972c-04a058307015",
       "Language": 1,
-      "Name": "Util",
-      "Type": 5,
+      "Name": "UIGMPlayerDataTool_Edit",
+      "Type": 1,
       "Source": 0,
       "Target": null
     }

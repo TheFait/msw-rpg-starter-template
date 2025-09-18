@@ -1,0 +1,114 @@
+@Component
+script PlayerData extends Component
+
+	@TargetUserSync
+	property integer Level = 0
+
+	@TargetUserSync
+	property integer Dia = 0
+
+	@TargetUserSync
+	property integer Meso = 0
+
+	property integer FirstLoginTime = 0
+
+	property integer LastUpdateTime = 0
+
+	property string Extra = ""
+
+	property boolean IsFirstLogin = false
+
+	property boolean IsSaveDB = false
+
+	@ExecSpace("ServerOnly")
+	method boolean LoadFromDB(table loadKeys)
+		table.insert(loadKeys, _GMPlayerDataToolLogic.StorageName)
+		return true
+	end
+
+	@ExecSpace("ServerOnly")
+	method boolean OnLoadedDataFromDB(table loadedData)
+		local userId = self.Entity.PlayerComponent.UserId
+		
+		---@type DataStorageItem
+		local sds = loadedData[_GMPlayerDataToolLogic.StorageName]
+		local sdsValue = sds.Value
+		
+		local basicData = PlayerBasicInfo()
+		basicData:Init()
+		
+		if not _Util:IsNilorEmptyString(sdsValue) then
+			local deserTable = _HttpService:JSONDecode(sdsValue)
+			if not basicData:Deserialize(deserTable) then
+				log_error("Deserialize Failed. ProfileCode : " .. self.Entity.PlayerComponent.ProfileCode)
+				return false
+			end
+			basicData:ToComponent(self)
+		else
+			basicData:ToComponent(self)	-- Init
+			
+			self.FirstLoginTime = _DateTimeLogic:GetTimeElapsed()
+			self.IsFirstLogin = true
+			self.IsSaveDB = true
+		end
+		
+		return true
+	end
+
+	@ExecSpace("ServerOnly")
+	method boolean PostOnLoadedDataFromDB()
+		if self.IsFirstLogin then
+			-- Executes tasks on the first login.
+		end
+		
+		return true
+	end
+
+	@ExecSpace("ServerOnly")
+	method void SaveToDB(table saveData)
+		if not self.IsSaveDB then
+			return
+		end
+		
+		self.LastUpdateTime = _DateTimeLogic:GetTimeElapsed()
+		
+		local deserTable = {}
+		
+		local basicData = PlayerBasicInfo()
+		basicData:FromComponent(self)
+		basicData:Serialize(deserTable)
+		
+		local sds = ""
+		if not _Util:IsNilorEmptyTable(deserTable) then
+			sds = _HttpService:JSONEncode(deserTable)
+		end
+		
+		saveData[_GMPlayerDataToolLogic.StorageName] = sds
+		self.IsSaveDB = false
+	end
+
+	@ExecSpace("ServerOnly")
+	method void SetLevel(integer level)
+		self.Level = level
+		self.IsSaveDB = true
+	end
+
+	@ExecSpace("ServerOnly")
+	method void SetDia(integer dia)
+		self.Dia = dia
+		self.IsSaveDB = true
+	end
+
+	@ExecSpace("ServerOnly")
+	method void SetMeso(integer meso)
+		self.Meso = meso
+		self.IsSaveDB = true
+	end
+
+	@ExecSpace("ServerOnly")
+	method void SetExtra(string extra)
+		self.Extra = extra
+		self.IsSaveDB = true
+	end
+
+end
