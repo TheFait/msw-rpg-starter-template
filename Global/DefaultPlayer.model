@@ -20,7 +20,8 @@
       "Components": [
         "script.PlayerData",
         "script.PlayerJob",
-        "script.PlayerInventory"
+        "script.PlayerInventory",
+        "script.PlayerDBManager"
       ],
       "Properties": [],
       "Values": [

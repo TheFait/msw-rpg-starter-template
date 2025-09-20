@@ -79,7 +79,6 @@ script KeyBindingSampleLogic extends Logic
 		user:AddComponent(PlayerControllerExtend)
 		user:AddComponent(PlayerSkillManager)
 		user:AddComponent(PlayerSetting)
-		user:AddComponent(PlayerDBManager)
 	end
 
 	@ExecSpace("ClientOnly")
