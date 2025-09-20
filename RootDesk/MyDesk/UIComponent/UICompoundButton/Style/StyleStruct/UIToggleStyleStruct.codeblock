@@ -1,0 +1,33 @@
+{
+  "Id": "",
+  "GameId": "",
+  "EntryKey": "codeblock://7c8405c0-077e-4bfb-bc28-99e184f8c4b5",
+  "ContentType": "x-mod/codeblock",
+  "Content": "",
+  "Usage": 0,
+  "UsePublish": 1,
+  "UseService": 0,
+  "CoreVersion": "1.25.0.0",
+  "StudioVersion": "0.1.0.0",
+  "DynamicLoading": 0,
+  "ContentProto": {
+    "Use": "Json",
+    "Json": {
+      "CoreVersion": {
+        "Major": 0,
+        "Minor": 2
+      },
+      "ScriptVersion": {
+        "Major": 1,
+        "Minor": 1
+      },
+      "Description": "",
+      "Id": "7c8405c0-077e-4bfb-bc28-99e184f8c4b5",
+      "Language": 1,
+      "Name": "UIToggleStyleStruct",
+      "Type": 9,
+      "Source": 0,
+      "Target": null
+    }
+  }
+}

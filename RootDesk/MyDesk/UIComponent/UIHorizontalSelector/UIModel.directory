@@ -1,0 +1,23 @@
+{
+  "Id": "",
+  "GameId": "",
+  "EntryKey": "directory://3d0241d9e592445fa204de3141993a9f",
+  "ContentType": "x-mod/directory",
+  "Content": "",
+  "Usage": 0,
+  "UsePublish": 1,
+  "UseService": 0,
+  "CoreVersion": "1.25.0.0",
+  "StudioVersion": "0.1.0.0",
+  "DynamicLoading": 0,
+  "ContentProto": {
+    "Use": "Json",
+    "Json": {
+      "entry_id": "directory://3d0241d9e592445fa204de3141993a9f",
+      "name": "UIModel",
+      "lock": false,
+      "folding": false,
+      "nameEditable": true
+    }
+  }
+}

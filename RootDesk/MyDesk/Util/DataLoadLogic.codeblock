@@ -1,7 +1,7 @@
 {
   "Id": "",
   "GameId": "",
-  "EntryKey": "codeblock://2df3850b-d529-4992-9823-7c99d63c5791",
+  "EntryKey": "codeblock://d68b401a-e38c-4839-8e8d-93cdae2be35b",
   "ContentType": "x-mod/codeblock",
   "Content": "",
   "Usage": 0,
@@ -22,7 +22,7 @@
         "Minor": 1
       },
       "Description": "",
-      "Id": "2df3850b-d529-4992-9823-7c99d63c5791",
+      "Id": "d68b401a-e38c-4839-8e8d-93cdae2be35b",
       "Language": 1,
       "Name": "DataLoadLogic",
       "Type": 5,

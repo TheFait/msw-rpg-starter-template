@@ -3,7 +3,7 @@ script PlayerBanSampleUILogic extends Logic
 
 	property string ModelToolName = "UIGMPlayerBanTool"
 
-	property string ToolUIPath = "/ui/DefaultGroup"
+	property string ToolUIPath = "/ui/SystemGroup"
 
 	property Entity ToolUIEntity = nil
 

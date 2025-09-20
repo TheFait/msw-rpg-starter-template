@@ -1,0 +1,22 @@
+{
+  "Id": "",
+  "GameId": "",
+  "EntryKey": "scriptfile://1fe8ca99-9995-4d91-aa76-6a02dba0488c",
+  "ContentType": "x-mod/scriptfile",
+  "Content": "",
+  "Usage": 0,
+  "UsePublish": 1,
+  "UseService": 0,
+  "CoreVersion": "1.25.0.0",
+  "StudioVersion": "0.1.0.0",
+  "DynamicLoading": 0,
+  "ContentProto": {
+    "Use": "Json",
+    "Json": {
+      "Name": "Inventory_ReadMe",
+      "Id": "1fe8ca99-9995-4d91-aa76-6a02dba0488c",
+      "Script": "--[[\n# Inventory\nThis package provides functionality for inventory management, equipping and unequipping items, and using items.\n\n====================================\n## Introduction\n1. Equipment\nRarity\nThe package categorizes equipment by rarity.\nThe available rarities are None, Rare, Epic, Unique, and Legendary.\nEach rarity has a different background color applied to the equipment.\n\nEquipping and Unequipping\nWhen equipment is equipped, the equipment icon is displayed on the right side of the UI, and the corresponding item in the inventory grid on the left becomes dimmed.\nAdditionally, the character's costume is updated according to the equipment.\n\n2. Items\nUse\nWhen a non-equipment item slot is clicked, a use popup appears.\nThe package includes a dummy stamina item, and when used, a log is output.\n\nDelete\nItems can be deleted via the trash bin icon, and they are deleted individually.\nEquipped items or locked items cannot be deleted.\n\nLocking\nItems can be locked or unlocked using the lock icon on the right side of the item popup.\nWhen locked, an icon is displayed at the bottom of the item slot.\n\nDuration\nItems with an expiration date cannot be used once their time has expired.\nItems with a usage period display a small clock icon at the bottom-right corner of the item slot.\n\n3. Game Start Loading Sequence\nThere are separate loading processes for the server and client.\nOnce the client finishes loading, it sends a notification to the server, which then starts updating the player's information from the database.\n\n4. Player Components\nPlayerJob\nManages the player's job and job experience.\n\nPlayerInventory\nManages all items owned and the equipment equipped by job.\n\n5. Items are created and deleted through the ItemFactory.\n\n====================================\n## Installation\n\n1. Inventory UI Path Configuration\nThe package is set to spawn as a child of the DefaultGroup.\nThe spawn location can be changed via the ParentUIPath of the InventorySampleLogic.\nSince the inventory is mostly used as a popup, it is recommended to move it to a group similar to PopupGroup.\n\n2. Adding Player Components\nThe following three components must be added to the Player component:\n- PlayerDBManager\n- PlayerJob\n- PlayerInventory\n\n3. Item Data\nTo add items, you need to input data for the items into the following two datasets:\n\n- ItemDataTable\n- ItemGearDataSet\n\tThe Id entered in these datasets must also exist in ItemDataTable for the same Id.\n\n4. Item Usable Functions\nBecause the usage method differs depending on the item category, if you add an item category with a usable function to ItemCategoryEnum, you must also define its UsableFunction in ItemCategoryEnum.\n\n5. Item Sort Functions\nItem sorting functions should be added to the InventorySortEnum along with the Enum properties.\n\n6. Job\nThe package includes data for only one job. Multiple jobs can be created, but the structure allows only one job to be stored.\nTo add job data, you need to update the following datasets:\n- JobDataSet\n- (JobCode)BasicStatDataSet\n- PlayerJobCodeEnum with data for the corresponding job.\n\n7. Stat\nAdditional stats for characters or equipment may need to be added.\n\n====================================\n## Usage\n\n1. Press the I key to open and close the inventory.\n\n2. Press the Alpha1 key to create a dummy stamina item.\n\n3. Click an inventory item slot to open either the equipment or consumable popup.\n\n====================================\n## License\n\nThis project is licensed under the MIT License.\n\nYou are free to use, modify, and distribute this project.\n\nHowever, the software is provided \"as is\", without warranty of any kind.\n\nFor more details, please see the LICENSE.(https://opensource.org/licenses/MIT)\n\n====================================\n## Happy Coding!\n]]",
+      "ModifyTime": "09/20/2025 12:25:16"
+    }
+  }
+}

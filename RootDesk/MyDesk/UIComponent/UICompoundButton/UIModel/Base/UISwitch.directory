@@ -1,0 +1,23 @@
+{
+  "Id": "",
+  "GameId": "",
+  "EntryKey": "directory://437abfcb00f64cfb85568b7682affd63",
+  "ContentType": "x-mod/directory",
+  "Content": "",
+  "Usage": 0,
+  "UsePublish": 1,
+  "UseService": 0,
+  "CoreVersion": "1.25.0.0",
+  "StudioVersion": "0.1.0.0",
+  "DynamicLoading": 0,
+  "ContentProto": {
+    "Use": "Json",
+    "Json": {
+      "entry_id": "directory://437abfcb00f64cfb85568b7682affd63",
+      "name": "UISwitch",
+      "lock": false,
+      "folding": false,
+      "nameEditable": true
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "Id": "",
+  "GameId": "",
+  "EntryKey": "directory://34c0d19a0b9645a9832f1c9696511d6a",
+  "ContentType": "x-mod/directory",
+  "Content": "",
+  "Usage": 0,
+  "UsePublish": 1,
+  "UseService": 0,
+  "CoreVersion": "1.25.0.0",
+  "StudioVersion": "0.1.0.0",
+  "DynamicLoading": 0,
+  "ContentProto": {
+    "Use": "Json",
+    "Json": {
+      "entry_id": "directory://34c0d19a0b9645a9832f1c9696511d6a",
+      "name": "Inventory",
+      "lock": false,
+      "folding": false,
+      "nameEditable": true
+    }
+  }
+}

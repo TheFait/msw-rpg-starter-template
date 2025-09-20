@@ -1,0 +1,23 @@
+{
+  "Id": "",
+  "GameId": "",
+  "EntryKey": "directory://0bb0d8372d264d6fbc8e9149c12e127a",
+  "ContentType": "x-mod/directory",
+  "Content": "",
+  "Usage": 0,
+  "UsePublish": 1,
+  "UseService": 0,
+  "CoreVersion": "1.25.0.0",
+  "StudioVersion": "0.1.0.0",
+  "DynamicLoading": 0,
+  "ContentProto": {
+    "Use": "Json",
+    "Json": {
+      "entry_id": "directory://0bb0d8372d264d6fbc8e9149c12e127a",
+      "name": "UIHorizontalSelector",
+      "lock": false,
+      "folding": false,
+      "nameEditable": true
+    }
+  }
+}

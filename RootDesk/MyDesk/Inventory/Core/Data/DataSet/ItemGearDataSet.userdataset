@@ -1,0 +1,22 @@
+{
+  "Id": "",
+  "GameId": "",
+  "EntryKey": "userdataset://a63e65da-738d-4ee0-959d-0a5fc52168ab",
+  "ContentType": "x-mod/userdataset",
+  "Content": "",
+  "Usage": 0,
+  "UsePublish": 1,
+  "UseService": 0,
+  "CoreVersion": "1.25.0.0",
+  "StudioVersion": "0.1.0.0",
+  "DynamicLoading": 0,
+  "ContentProto": {
+    "Use": "Json",
+    "Json": {
+      "name": "ItemGearDataSet",
+      "id": "a63e65da-738d-4ee0-959d-0a5fc52168ab",
+      "serveronly": false,
+      "dynamicloading": 0
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "Id": "",
+  "GameId": "",
+  "EntryKey": "codeblock://43b95e36-6585-4d2a-9940-3d9820f8289e",
+  "ContentType": "x-mod/codeblock",
+  "Content": "",
+  "Usage": 0,
+  "UsePublish": 1,
+  "UseService": 0,
+  "CoreVersion": "1.25.0.0",
+  "StudioVersion": "0.1.0.0",
+  "DynamicLoading": 0,
+  "ContentProto": {
+    "Use": "Json",
+    "Json": {
+      "CoreVersion": {
+        "Major": 0,
+        "Minor": 2
+      },
+      "ScriptVersion": {
+        "Major": 1,
+        "Minor": 1
+      },
+      "Description": "",
+      "Id": "43b95e36-6585-4d2a-9940-3d9820f8289e",
+      "Language": 1,
+      "Name": "UIFixedPagination",
+      "Type": 1,
+      "Source": 0,
+      "Target": "codeblock://77bc82ad-c428-49e4-8944-fb94bde95f89"
+    }
+  }
+}

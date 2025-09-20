@@ -161,8 +161,8 @@
           },
           "Value": {
             "$type": "MOD.Core.MODVector2, MOD.Core",
-            "x": 14.7056274,
-            "y": -22.5934448
+            "x": 0.0,
+            "y": 0.0
           }
         },
         {
@@ -17321,7 +17321,7 @@
                 },
                 "Value": {
                   "$type": "MOD.Core.MODVector2, MOD.Core",
-                  "x": 0.944999933,
+                  "x": 0.9449999,
                   "y": -30.27
                 }
               },
@@ -20997,8 +20997,8 @@
                 },
                 "Value": {
                   "$type": "MOD.Core.MODVector2, MOD.Core",
-                  "x": 1410.0,
-                  "y": 37.06241
+                  "x": 703.195,
+                  "y": 338.63678
                 }
               },
               {
@@ -21010,8 +21010,8 @@
                 },
                 "Value": {
                   "$type": "MOD.Core.MODVector2, MOD.Core",
-                  "x": 10.0,
-                  "y": -642.9376
+                  "x": -696.805,
+                  "y": -341.36322
                 }
               },
               {
@@ -22013,8 +22013,8 @@
                 },
                 "Value": {
                   "$type": "MOD.Core.MODVector2, MOD.Core",
-                  "x": 190.0,
-                  "y": -10.0
+                  "x": 90.45,
+                  "y": 39.775
                 }
               },
               {
@@ -22026,8 +22026,8 @@
                 },
                 "Value": {
                   "$type": "MOD.Core.MODVector2, MOD.Core",
-                  "x": 10.0,
-                  "y": -90.0
+                  "x": -89.55,
+                  "y": -40.225
                 }
               },
               {
@@ -22422,8 +22422,8 @@
                 },
                 "Value": {
                   "$type": "MOD.Core.MODVector2, MOD.Core",
-                  "x": 190.0,
-                  "y": -100.0
+                  "x": 90.45,
+                  "y": 39.37
                 }
               },
               {
@@ -22435,8 +22435,8 @@
                 },
                 "Value": {
                   "$type": "MOD.Core.MODVector2, MOD.Core",
-                  "x": 10.0,
-                  "y": -180.0
+                  "x": -89.55,
+                  "y": -40.63
                 }
               },
               {
@@ -22840,8 +22840,8 @@
                 },
                 "Value": {
                   "$type": "MOD.Core.MODVector2, MOD.Core",
-                  "x": 190.0,
-                  "y": -190.0
+                  "x": 90.45,
+                  "y": 38.965
                 }
               },
               {
@@ -22853,8 +22853,8 @@
                 },
                 "Value": {
                   "$type": "MOD.Core.MODVector2, MOD.Core",
-                  "x": 10.0,
-                  "y": -270.0
+                  "x": -89.55,
+                  "y": -41.035
                 }
               },
               {
@@ -23249,8 +23249,8 @@
                 },
                 "Value": {
                   "$type": "MOD.Core.MODVector2, MOD.Core",
-                  "x": 190.0,
-                  "y": -370.0
+                  "x": 90.45,
+                  "y": 38.155
                 }
               },
               {
@@ -23262,8 +23262,8 @@
                 },
                 "Value": {
                   "$type": "MOD.Core.MODVector2, MOD.Core",
-                  "x": 10.0,
-                  "y": -450.0
+                  "x": -89.55,
+                  "y": -41.845
                 }
               },
               {
@@ -23658,8 +23658,8 @@
                 },
                 "Value": {
                   "$type": "MOD.Core.MODVector2, MOD.Core",
-                  "x": 190.0,
-                  "y": -280.0
+                  "x": 90.45,
+                  "y": 38.56
                 }
               },
               {
@@ -23671,8 +23671,8 @@
                 },
                 "Value": {
                   "$type": "MOD.Core.MODVector2, MOD.Core",
-                  "x": 10.0,
-                  "y": -360.0
+                  "x": -89.55,
+                  "y": -41.44
                 }
               },
               {
@@ -24067,8 +24067,8 @@
                 },
                 "Value": {
                   "$type": "MOD.Core.MODVector2, MOD.Core",
-                  "x": 190.0,
-                  "y": -460.0
+                  "x": 90.45,
+                  "y": 97.48
                 }
               },
               {
@@ -24080,8 +24080,8 @@
                 },
                 "Value": {
                   "$type": "MOD.Core.MODVector2, MOD.Core",
-                  "x": 10.0,
-                  "y": -660.0
+                  "x": -89.55,
+                  "y": -102.52
                 }
               },
               {
@@ -25800,8 +25800,8 @@
                 },
                 "Value": {
                   "$type": "MOD.Core.MODVector2, MOD.Core",
-                  "x": 1160.0,
-                  "y": -10.0
+                  "x": 577.6325,
+                  "y": 39.775
                 }
               },
               {
@@ -25813,8 +25813,8 @@
                 },
                 "Value": {
                   "$type": "MOD.Core.MODVector2, MOD.Core",
-                  "x": 10.0,
-                  "y": -90.0
+                  "x": -572.3675,
+                  "y": -40.225
                 }
               },
               {
@@ -26330,8 +26330,8 @@
                 },
                 "Value": {
                   "$type": "MOD.Core.MODVector2, MOD.Core",
-                  "x": 1160.0,
-                  "y": -100.0
+                  "x": 577.6325,
+                  "y": 39.37
                 }
               },
               {
@@ -26343,8 +26343,8 @@
                 },
                 "Value": {
                   "$type": "MOD.Core.MODVector2, MOD.Core",
-                  "x": 10.0,
-                  "y": -180.0
+                  "x": -572.3675,
+                  "y": -40.63
                 }
               },
               {
@@ -26860,8 +26860,8 @@
                 },
                 "Value": {
                   "$type": "MOD.Core.MODVector2, MOD.Core",
-                  "x": 1160.0,
-                  "y": -190.0
+                  "x": 577.6325,
+                  "y": 38.965
                 }
               },
               {
@@ -26873,8 +26873,8 @@
                 },
                 "Value": {
                   "$type": "MOD.Core.MODVector2, MOD.Core",
-                  "x": 10.0,
-                  "y": -270.0
+                  "x": -572.3675,
+                  "y": -41.035
                 }
               },
               {
@@ -27399,8 +27399,8 @@
                 },
                 "Value": {
                   "$type": "MOD.Core.MODVector2, MOD.Core",
-                  "x": 1160.0,
-                  "y": -280.0
+                  "x": 577.6325,
+                  "y": 38.56
                 }
               },
               {
@@ -27412,8 +27412,8 @@
                 },
                 "Value": {
                   "$type": "MOD.Core.MODVector2, MOD.Core",
-                  "x": 10.0,
-                  "y": -360.0
+                  "x": -572.3675,
+                  "y": -41.44
                 }
               },
               {
@@ -27920,8 +27920,8 @@
                 },
                 "Value": {
                   "$type": "MOD.Core.MODVector2, MOD.Core",
-                  "x": 1160.0,
-                  "y": -370.0
+                  "x": 577.6325,
+                  "y": 38.155
                 }
               },
               {
@@ -27933,8 +27933,8 @@
                 },
                 "Value": {
                   "$type": "MOD.Core.MODVector2, MOD.Core",
-                  "x": 10.0,
-                  "y": -450.0
+                  "x": -572.3675,
+                  "y": -41.845
                 }
               },
               {
@@ -28441,8 +28441,8 @@
                 },
                 "Value": {
                   "$type": "MOD.Core.MODVector2, MOD.Core",
-                  "x": 1160.0,
-                  "y": -460.0
+                  "x": 577.6325,
+                  "y": 97.48
                 }
               },
               {
@@ -28454,8 +28454,8 @@
                 },
                 "Value": {
                   "$type": "MOD.Core.MODVector2, MOD.Core",
-                  "x": 10.0,
-                  "y": -660.0
+                  "x": -572.3675,
+                  "y": -102.52
                 }
               },
               {
@@ -30293,7 +30293,7 @@
                 "Value": {
                   "$type": "MOD.Core.MODVector2, MOD.Core",
                   "x": 200.0,
-                  "y": -10.0
+                  "y": 49.73
                 }
               },
               {
@@ -30306,7 +30306,7 @@
                 "Value": {
                   "$type": "MOD.Core.MODVector2, MOD.Core",
                   "x": 0.0,
-                  "y": -110.0
+                  "y": -50.27
                 }
               },
               {
@@ -30753,8 +30753,8 @@
                 },
                 "Value": {
                   "$type": "MOD.Core.MODVector2, MOD.Core",
-                  "x": 370.0,
-                  "y": -30.0
+                  "x": 160.945,
+                  "y": 29.73
                 }
               },
               {
@@ -30766,8 +30766,8 @@
                 },
                 "Value": {
                   "$type": "MOD.Core.MODVector2, MOD.Core",
-                  "x": 210.0,
-                  "y": -90.0
+                  "x": 0.944999933,
+                  "y": -30.27
                 }
               },
               {
@@ -31241,8 +31241,8 @@
                 },
                 "Value": {
                   "$type": "MOD.Core.MODVector2, MOD.Core",
-                  "x": 580.0,
-                  "y": -20.0
+                  "x": 2.61,
+                  "y": 79.55
                 }
               },
               {
@@ -31254,8 +31254,8 @@
                 },
                 "Value": {
                   "$type": "MOD.Core.MODVector2, MOD.Core",
-                  "x": 380.0,
-                  "y": -100.0
+                  "x": -197.39,
+                  "y": -0.45
                 }
               },
               {

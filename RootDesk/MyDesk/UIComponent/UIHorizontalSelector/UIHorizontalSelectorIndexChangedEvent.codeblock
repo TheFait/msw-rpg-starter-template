@@ -1,0 +1,33 @@
+{
+  "Id": "",
+  "GameId": "",
+  "EntryKey": "codeblock://34c0bdae-e0b8-43b1-9185-79097c84fc60",
+  "ContentType": "x-mod/codeblock",
+  "Content": "",
+  "Usage": 0,
+  "UsePublish": 1,
+  "UseService": 0,
+  "CoreVersion": "1.25.0.0",
+  "StudioVersion": "0.1.0.0",
+  "DynamicLoading": 0,
+  "ContentProto": {
+    "Use": "Json",
+    "Json": {
+      "CoreVersion": {
+        "Major": 0,
+        "Minor": 2
+      },
+      "ScriptVersion": {
+        "Major": 1,
+        "Minor": 1
+      },
+      "Description": "",
+      "Id": "34c0bdae-e0b8-43b1-9185-79097c84fc60",
+      "Language": 1,
+      "Name": "UIHorizontalSelectorIndexChangedEvent",
+      "Type": 3,
+      "Source": 0,
+      "Target": null
+    }
+  }
+}

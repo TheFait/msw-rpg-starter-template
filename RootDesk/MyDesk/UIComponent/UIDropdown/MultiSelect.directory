@@ -1,0 +1,23 @@
+{
+  "Id": "",
+  "GameId": "",
+  "EntryKey": "directory://77f36ba42d0f4945aa51bf959749b07f",
+  "ContentType": "x-mod/directory",
+  "Content": "",
+  "Usage": 0,
+  "UsePublish": 1,
+  "UseService": 0,
+  "CoreVersion": "1.25.0.0",
+  "StudioVersion": "0.1.0.0",
+  "DynamicLoading": 0,
+  "ContentProto": {
+    "Use": "Json",
+    "Json": {
+      "entry_id": "directory://77f36ba42d0f4945aa51bf959749b07f",
+      "name": "MultiSelect",
+      "lock": false,
+      "folding": false,
+      "nameEditable": true
+    }
+  }
+}

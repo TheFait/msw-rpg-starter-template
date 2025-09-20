@@ -1,0 +1,23 @@
+{
+  "Id": "",
+  "GameId": "",
+  "EntryKey": "directory://b14bae9108e143b590c407aff4277f3b",
+  "ContentType": "x-mod/directory",
+  "Content": "",
+  "Usage": 0,
+  "UsePublish": 1,
+  "UseService": 0,
+  "CoreVersion": "1.25.0.0",
+  "StudioVersion": "0.1.0.0",
+  "DynamicLoading": 0,
+  "ContentProto": {
+    "Use": "Json",
+    "Json": {
+      "entry_id": "directory://b14bae9108e143b590c407aff4277f3b",
+      "name": "UIEntityToggle",
+      "lock": false,
+      "folding": false,
+      "nameEditable": true
+    }
+  }
+}

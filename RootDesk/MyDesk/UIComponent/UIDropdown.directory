@@ -1,0 +1,23 @@
+{
+  "Id": "",
+  "GameId": "",
+  "EntryKey": "directory://10135f10ba4a4890adde906c912cb255",
+  "ContentType": "x-mod/directory",
+  "Content": "",
+  "Usage": 0,
+  "UsePublish": 1,
+  "UseService": 0,
+  "CoreVersion": "1.25.0.0",
+  "StudioVersion": "0.1.0.0",
+  "DynamicLoading": 0,
+  "ContentProto": {
+    "Use": "Json",
+    "Json": {
+      "entry_id": "directory://10135f10ba4a4890adde906c912cb255",
+      "name": "UIDropdown",
+      "lock": false,
+      "folding": false,
+      "nameEditable": true
+    }
+  }
+}

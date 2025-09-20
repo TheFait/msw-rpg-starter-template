@@ -1,0 +1,22 @@
+{
+  "Id": "",
+  "GameId": "",
+  "EntryKey": "userdataset://01fe3a01-62a3-49dd-9d6d-4758e986ef11",
+  "ContentType": "x-mod/userdataset",
+  "Content": "",
+  "Usage": 0,
+  "UsePublish": 1,
+  "UseService": 0,
+  "CoreVersion": "1.25.0.0",
+  "StudioVersion": "0.1.0.0",
+  "DynamicLoading": 0,
+  "ContentProto": {
+    "Use": "Json",
+    "Json": {
+      "name": "JobDataSet",
+      "id": "01fe3a01-62a3-49dd-9d6d-4758e986ef11",
+      "serveronly": false,
+      "dynamicloading": 0
+    }
+  }
+}

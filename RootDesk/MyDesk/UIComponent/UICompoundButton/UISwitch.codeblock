@@ -1,0 +1,33 @@
+{
+  "Id": "",
+  "GameId": "",
+  "EntryKey": "codeblock://fe6e423b-3888-47b2-bac2-7726d858a8fb",
+  "ContentType": "x-mod/codeblock",
+  "Content": "",
+  "Usage": 0,
+  "UsePublish": 1,
+  "UseService": 0,
+  "CoreVersion": "1.25.0.0",
+  "StudioVersion": "0.1.0.0",
+  "DynamicLoading": 0,
+  "ContentProto": {
+    "Use": "Json",
+    "Json": {
+      "CoreVersion": {
+        "Major": 0,
+        "Minor": 2
+      },
+      "ScriptVersion": {
+        "Major": 1,
+        "Minor": 1
+      },
+      "Description": "",
+      "Id": "fe6e423b-3888-47b2-bac2-7726d858a8fb",
+      "Language": 1,
+      "Name": "UISwitch",
+      "Type": 1,
+      "Source": 0,
+      "Target": "codeblock://556664f5-f6c9-4ebe-88df-3f5a04fa092e"
+    }
+  }
+}

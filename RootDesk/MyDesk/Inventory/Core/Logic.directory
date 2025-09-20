@@ -1,0 +1,23 @@
+{
+  "Id": "",
+  "GameId": "",
+  "EntryKey": "directory://6bb9d72f1c3445cab382af328de8ecb9",
+  "ContentType": "x-mod/directory",
+  "Content": "",
+  "Usage": 0,
+  "UsePublish": 1,
+  "UseService": 0,
+  "CoreVersion": "1.25.0.0",
+  "StudioVersion": "0.1.0.0",
+  "DynamicLoading": 0,
+  "ContentProto": {
+    "Use": "Json",
+    "Json": {
+      "entry_id": "directory://6bb9d72f1c3445cab382af328de8ecb9",
+      "name": "Logic",
+      "lock": false,
+      "folding": false,
+      "nameEditable": true
+    }
+  }
+}

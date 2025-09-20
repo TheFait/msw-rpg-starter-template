@@ -1,0 +1,33 @@
+{
+  "Id": "",
+  "GameId": "",
+  "EntryKey": "codeblock://d6f7a14d-5145-4b97-919a-8b031f6533a0",
+  "ContentType": "x-mod/codeblock",
+  "Content": "",
+  "Usage": 0,
+  "UsePublish": 1,
+  "UseService": 0,
+  "CoreVersion": "1.25.0.0",
+  "StudioVersion": "0.1.0.0",
+  "DynamicLoading": 0,
+  "ContentProto": {
+    "Use": "Json",
+    "Json": {
+      "CoreVersion": {
+        "Major": 0,
+        "Minor": 2
+      },
+      "ScriptVersion": {
+        "Major": 1,
+        "Minor": 0
+      },
+      "Description": "",
+      "Id": "d6f7a14d-5145-4b97-919a-8b031f6533a0",
+      "Language": 1,
+      "Name": "UIEntityToggle",
+      "Type": 1,
+      "Source": 0,
+      "Target": "codeblock://556664f5-f6c9-4ebe-88df-3f5a04fa092e"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "Id": "",
+  "GameId": "",
+  "EntryKey": "directory://19e5df92f7bb4ebfa5c5b2daceeb8193",
+  "ContentType": "x-mod/directory",
+  "Content": "",
+  "Usage": 0,
+  "UsePublish": 1,
+  "UseService": 0,
+  "CoreVersion": "1.25.0.0",
+  "StudioVersion": "0.1.0.0",
+  "DynamicLoading": 0,
+  "ContentProto": {
+    "Use": "Json",
+    "Json": {
+      "entry_id": "directory://19e5df92f7bb4ebfa5c5b2daceeb8193",
+      "name": "JobData",
+      "lock": false,
+      "folding": false,
+      "nameEditable": true
+    }
+  }
+}

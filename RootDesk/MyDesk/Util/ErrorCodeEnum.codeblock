@@ -1,7 +1,7 @@
 {
   "Id": "",
   "GameId": "",
-  "EntryKey": "codeblock://a35655aa-e6c3-4d1a-9868-5db67e4c8f9c",
+  "EntryKey": "codeblock://e0840dec-b4ac-4e66-9326-24956a67e1de",
   "ContentType": "x-mod/codeblock",
   "Content": "",
   "Usage": 0,
@@ -22,7 +22,7 @@
         "Minor": 1
       },
       "Description": "",
-      "Id": "a35655aa-e6c3-4d1a-9868-5db67e4c8f9c",
+      "Id": "e0840dec-b4ac-4e66-9326-24956a67e1de",
       "Language": 1,
       "Name": "ErrorCodeEnum",
       "Type": 5,

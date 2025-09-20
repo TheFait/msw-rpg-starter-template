@@ -18,8 +18,9 @@
       "BaseModelId": "player",
       "Id": "defaultplayer",
       "Components": [
-        "script.PlayerDBManager",
-        "script.PlayerData"
+        "script.PlayerData",
+        "script.PlayerJob",
+        "script.PlayerInventory"
       ],
       "Properties": [],
       "Values": [
