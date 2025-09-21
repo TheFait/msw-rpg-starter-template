@@ -20,6 +20,7 @@ script PlayerDBManager extends Component
 		playerEntity.PlayerJob:SaveToDB(saveData)
 		playerEntity.PlayerInventory:SaveToDB(saveData)
 		playerEntity.PlayerSetting:SaveToDB(saveData)
+		playerEntity.PlayerData:SaveToDB(saveData)
 		-------------------------------------------------------------------
 		
 		local userID = self.Entity.PlayerComponent.UserId
@@ -50,6 +51,7 @@ script PlayerDBManager extends Component
 		playerEntity.PlayerJob:LoadFromDB(loadKey)
 		playerEntity.PlayerInventory:LoadFromDB(loadKey)
 		playerEntity.PlayerSetting:LoadFromDB(loadKey)
+		playerEntity.PlayerData:LoadFromDB(loadKey)
 		-------------------------------------------------------------------
 		
 		local returnCode, itemPages = ds:BatchGetAndWait(loadKey)
@@ -93,6 +95,10 @@ script PlayerDBManager extends Component
 		end
 		
 		if not playerEntity.PlayerSetting:OnLoadedDataFromDB(datas) then
+			return false
+		end
+		
+		if not playerEntity.PlayerData:OnLoadedDataFromDB(datas) then
 			return false
 		end
 		
