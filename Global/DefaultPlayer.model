@@ -23,7 +23,11 @@
         "script.PlayerInventory",
         "script.PlayerDBManager",
         "script.PlayerWorldShop",
-        "script.PlayerShop"
+        "script.PlayerShop",
+        "script.PlayerMail",
+        "script.PlayerAchievement",
+        "script.PlayerQuest",
+        "script.PlayerRanking"
       ],
       "Properties": [],
       "Values": [

@@ -7,6 +7,10 @@ script PlayerBasicInfo
 
 	property integer Meso = 0
 
+	property integer Stamina = 0
+
+	property integer CycleResetTime = 0
+
 	property integer FirstLoginTime = 0
 
 	property integer LastUpdateTime = 0
@@ -27,6 +31,8 @@ script PlayerBasicInfo
 		t["FirstLoginTime"] = self.FirstLoginTime
 		t["LastUpdateTime"] = self.LastUpdateTime
 		t["Extra"] = self.Extra
+		t["Stamina"] = self.Stamina
+		t["CycleResetTime"] = self.CycleResetTime
 		
 		return true
 	end
@@ -54,6 +60,12 @@ script PlayerBasicInfo
 		
 		local extra = t["Extra"]
 		self.Extra = extra or ""
+
+		local stam = t["Stamina"]
+		self.Stamina = stam or 0
+
+		local cyc = t["CycleResetTime"]
+		self.CycleResetTime = cyc or 0
 		
 		return true
 	end
@@ -65,6 +77,8 @@ script PlayerBasicInfo
 		comp.FirstLoginTime = self.FirstLoginTime
 		comp.LastUpdateTime = self.LastUpdateTime
 		comp.Extra = self.Extra
+		comp.Stamina = self.Stamina
+		comp.CycleResetTime = self.CycleResetTime
 	end
 
 	method void FromComponent(PlayerData comp)
@@ -74,6 +88,8 @@ script PlayerBasicInfo
 		self.FirstLoginTime = comp.FirstLoginTime
 		self.LastUpdateTime = comp.LastUpdateTime
 		self.Extra = comp.Extra
+		self.Stamina = comp.Stamina
+		self.CycleResetTime = comp.CycleResetTime
 	end
 
 end

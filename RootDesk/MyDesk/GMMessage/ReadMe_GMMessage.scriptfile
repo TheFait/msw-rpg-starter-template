@@ -1,0 +1,22 @@
+{
+  "Id": "",
+  "GameId": "",
+  "EntryKey": "scriptfile://6d347cdf-1e57-49ae-8d5c-a63085bea29c",
+  "ContentType": "x-mod/scriptfile",
+  "Content": "",
+  "Usage": 0,
+  "UsePublish": 1,
+  "UseService": 0,
+  "CoreVersion": "1.25.0.0",
+  "StudioVersion": "0.1.0.0",
+  "DynamicLoading": 0,
+  "ContentProto": {
+    "Use": "Json",
+    "Json": {
+      "Name": "ReadMe_GMMessage",
+      "Id": "6d347cdf-1e57-49ae-8d5c-a63085bea29c",
+      "Script": "--[[\n# GMMessage\nThis package provides a notification message feature, allowing creators to display messages to users.\nIt was developed with the goal of supporting smooth game operation by delivering important messages to players.\n\n=======================================\n## Features\n\n1. Notification Message Data Management\nYou can set and manage the start time, end time, display interval, and display duration of the messages.\nThe message data is stored in the GlobalDataStorage.\n\n2. Notification Message Display\nThe message is displayed at the top of the user's game screen.\n\n=======================================\n## Installation\n\nThis package is available for use after import, but some initial setup is required.\n\n1. Admin Permissions Check for Tool Usage\nYou need to check if the user has admin permissions using the Util:IsAdmin function.\n\n2. UI Path Configuration\nYou need to set the spawn paths for the message UI and the tool UI.\nThe ParentUIPath and ParentUIToolPath can be modified in GMMessageLogic.\nBy default, they are set to \"/ui/DefaultGroup\".\n\n3. DataStorage Name and Tag Configuration\nThe names and tags you are using might overlap with existing ones.\nYou can modify the StorageName and TagName in GMMessageLogic.\n\n=======================================\n## Usage\n\nYou can open the tool UI using the F11 key, which allows you to manage the notification data.\n\nThe start and end dates are stored and used in UTC time in the DataStorage.\n\nYou can set the time offset for your region using the \"User Time Offset\" option in the top-left corner of the tool.\nThis setting will only affect the date displayed for viewing and notification configuration.\nIt does not affect the already stored date data or the notification display logic.\n\nIf you use the ID of an existing notification, it will overwrite the previous message data, and the previous message will be removed.\nAfter setting or deleting a notification, click the refresh button to view the updated data.\n\n=======================================\n## Cautions\n\nNotice data is loaded only once when the world instance is created.\n\nIf there is too much data, it will consume more storage credits,\nso it's recommended to delete notices that are no longer in use.\n\n=======================================\n## Notification Data Structure\n\nId : 6-digit integer\n\nMessage : string\n\nStart/End Date: The start and end dates of the notification. The start date must be earlier than the end date.\n\nDisplay Interval (seconds): The interval at which the message will be displayed. You can enter an integer value of 2 or higher.\n\nDuration (seconds): The duration the message will be displayed. You can enter an integer value of 2 or higher.\nThe duration must be shorter than the display interval.\n\n=======================================\n## License\n\nThis project is licensed under the MIT License.\nYou are free to use, modify, and distribute this project.\n\nHowever, the software is provided \"as is\", without warranty of any kind.\nFor more details, please see the LICENSE.(https://opensource.org/licenses/MIT)\n\n=======================================\n## Happy Coding!\n]]",
+      "ModifyTime": "10/01/2025 07:52:03"
+    }
+  }
+}

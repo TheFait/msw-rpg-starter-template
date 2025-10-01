@@ -1,0 +1,33 @@
+{
+  "Id": "",
+  "GameId": "",
+  "EntryKey": "codeblock://b0508e1a-6b4d-4e12-ba73-b006c7165c16",
+  "ContentType": "x-mod/codeblock",
+  "Content": "",
+  "Usage": 0,
+  "UsePublish": 1,
+  "UseService": 0,
+  "CoreVersion": "1.25.0.0",
+  "StudioVersion": "0.1.0.0",
+  "DynamicLoading": 0,
+  "ContentProto": {
+    "Use": "Json",
+    "Json": {
+      "CoreVersion": {
+        "Major": 0,
+        "Minor": 2
+      },
+      "ScriptVersion": {
+        "Major": 1,
+        "Minor": 1
+      },
+      "Description": "",
+      "Id": "b0508e1a-6b4d-4e12-ba73-b006c7165c16",
+      "Language": 1,
+      "Name": "UIGMQuestTool_ViewItem",
+      "Type": 1,
+      "Source": 0,
+      "Target": null
+    }
+  }
+}

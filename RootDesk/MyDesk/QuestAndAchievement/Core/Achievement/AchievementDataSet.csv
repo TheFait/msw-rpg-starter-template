@@ -1,0 +1,17 @@
+﻿Id,ParentId,Name,CategoryEnum,CycleEnum,CondEnum,CondArg,CondExtra,Priority,Disable
+10,,Daily Mission,Day,Day,,,,1,
+11,10,Daily Attendance,Day,Day,Attend,,,2,
+12,10,Daily Jump,Day,Day,Jump,,,3,
+13,10,Daily Stamina Use,Day,Day,StaminaChange,Spend,,4,
+20,,Weekly Mission,Week,Week,,,,1,
+21,20,Weekly Attendance,Week,Week,Attend,,,2,
+22,20,Weekly Jump,Week,Week,Jump,,,3,
+23,20,Weekly Stamina Use,Week,Week,StaminaChange,Spend,,4,
+100,,Login,Normal,,Attend,,,,
+200,,Jump,Normal,,Jump,,,,
+300,,Mesos Acquired,Normal,,,,,,
+301,300,Mesos 1 ,Normal,,MesoChange,Gain,,,
+302,300,Mesos 2,Normal,,MesoChange,Gain,,,
+400,,Current Mesos,Day,Day,MesoChange,Balance,,,
+500,,Total Mesos,Day,Day,MesoChange,Balance,Max,,
+600,,Jump (Inactive),Feature,,Jump,,,,1

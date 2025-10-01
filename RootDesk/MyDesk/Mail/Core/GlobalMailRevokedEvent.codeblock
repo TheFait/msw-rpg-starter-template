@@ -1,0 +1,33 @@
+{
+  "Id": "",
+  "GameId": "",
+  "EntryKey": "codeblock://54f9ebc3-c8f5-48e8-8f01-e56389645c83",
+  "ContentType": "x-mod/codeblock",
+  "Content": "",
+  "Usage": 0,
+  "UsePublish": 1,
+  "UseService": 0,
+  "CoreVersion": "1.25.0.0",
+  "StudioVersion": "0.1.0.0",
+  "DynamicLoading": 0,
+  "ContentProto": {
+    "Use": "Json",
+    "Json": {
+      "CoreVersion": {
+        "Major": 0,
+        "Minor": 2
+      },
+      "ScriptVersion": {
+        "Major": 1,
+        "Minor": 1
+      },
+      "Description": "",
+      "Id": "54f9ebc3-c8f5-48e8-8f01-e56389645c83",
+      "Language": 1,
+      "Name": "GlobalMailRevokedEvent",
+      "Type": 3,
+      "Source": 0,
+      "Target": null
+    }
+  }
+}

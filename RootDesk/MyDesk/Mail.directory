@@ -1,0 +1,23 @@
+{
+  "Id": "",
+  "GameId": "",
+  "EntryKey": "directory://a8f4ae1738cb4066b7a16802d955aeaf",
+  "ContentType": "x-mod/directory",
+  "Content": "",
+  "Usage": 0,
+  "UsePublish": 1,
+  "UseService": 0,
+  "CoreVersion": "1.25.0.0",
+  "StudioVersion": "0.1.0.0",
+  "DynamicLoading": 0,
+  "ContentProto": {
+    "Use": "Json",
+    "Json": {
+      "entry_id": "directory://a8f4ae1738cb4066b7a16802d955aeaf",
+      "name": "Mail",
+      "lock": false,
+      "folding": false,
+      "nameEditable": true
+    }
+  }
+}

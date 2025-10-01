@@ -1,0 +1,22 @@
+{
+  "Id": "",
+  "GameId": "",
+  "EntryKey": "userdataset://b2c6da57-10d4-43f5-a6f4-5ba050c24f8c",
+  "ContentType": "x-mod/userdataset",
+  "Content": "",
+  "Usage": 0,
+  "UsePublish": 1,
+  "UseService": 0,
+  "CoreVersion": "1.25.0.0",
+  "StudioVersion": "0.1.0.0",
+  "DynamicLoading": 0,
+  "ContentProto": {
+    "Use": "Json",
+    "Json": {
+      "name": "RankingConfigDataSet",
+      "id": "b2c6da57-10d4-43f5-a6f4-5ba050c24f8c",
+      "serveronly": false,
+      "dynamicloading": 0
+    }
+  }
+}

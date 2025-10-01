@@ -12,3 +12,11 @@ Starter template for MapleStory Worlds RPG like games. Includes a collection of 
 - UIComponents
 - Command (\)
 - Dialog (2 to begin cutscene)
+- GM Message (F11)
+- Admin Mail System (F7, F8)
+  - NOTE: Functionality to grant the mailed items is not connected to the Inventory system.
+  - NOTE: Item icon display in mail is not connected, Item IDs are displayed
+- Achievements (F1 for sample UI, F2 for admin tool)
+- Quests (4 for sample UI, 5 for admin tool)
+- Advanced Ranking (6, 7, 8)
+  - NOTE: Some issues in viewing the ranking UI

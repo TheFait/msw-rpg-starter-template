@@ -1,0 +1,33 @@
+{
+  "Id": "",
+  "GameId": "",
+  "EntryKey": "codeblock://0568b6dd-2785-4b4d-9efe-bf82e5bb1f21",
+  "ContentType": "x-mod/codeblock",
+  "Content": "",
+  "Usage": 0,
+  "UsePublish": 1,
+  "UseService": 0,
+  "CoreVersion": "1.25.0.0",
+  "StudioVersion": "0.1.0.0",
+  "DynamicLoading": 0,
+  "ContentProto": {
+    "Use": "Json",
+    "Json": {
+      "CoreVersion": {
+        "Major": 0,
+        "Minor": 2
+      },
+      "ScriptVersion": {
+        "Major": 1,
+        "Minor": 1
+      },
+      "Description": "",
+      "Id": "0568b6dd-2785-4b4d-9efe-bf82e5bb1f21",
+      "Language": 1,
+      "Name": "AchievementCategoryEnum",
+      "Type": 5,
+      "Source": 0,
+      "Target": null
+    }
+  }
+}

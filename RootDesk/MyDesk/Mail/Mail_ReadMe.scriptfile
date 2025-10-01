@@ -1,0 +1,22 @@
+{
+  "Id": "",
+  "GameId": "",
+  "EntryKey": "scriptfile://058b6eb3-76fa-4093-a0e7-66caf6444d9c",
+  "ContentType": "x-mod/scriptfile",
+  "Content": "",
+  "Usage": 0,
+  "UsePublish": 1,
+  "UseService": 0,
+  "CoreVersion": "1.25.0.0",
+  "StudioVersion": "0.1.0.0",
+  "DynamicLoading": 0,
+  "ContentProto": {
+    "Use": "Json",
+    "Json": {
+      "Name": "Mail_ReadMe",
+      "Id": "058b6eb3-76fa-4093-a0e7-66caf6444d9c",
+      "Script": "--[[\n📬 MailPackage\n\n────────────────────────────  \n[Overview]  \nThis project is a package for managing the in-game mail system.  \nGame Masters (GMs) can send mail to all players or specific players.  \nPlayers can receive and manage their own mail.\n\n────────────────────────────  \n[Main Features]\n\n■ GMMailTool (GM Functions)  \nProvides the following features for GMs to manage mail:\n\n  - Send Mail  \n    · Send mail to a specific player or all players.  \n    · ※ If sending to a specific player, they must reconnect to reflect the mail.  \n\n  - Attach Items  \n    · Items can be attached to the mail.\n\n  - Recall Mail  \n    · Sent mail can be recalled.  \n    · ※ If recalling from a specific player, they must reconnect to reflect the changes.\n\n  - View Sent Mail  \n    · GMs can view a list of sent mail.\n\n■ PlayerMail (Player Functions)  \nProvides the following features for players to manage their mail:\n\n  - Receive Mail  \n    · Players can receive mail sent to them.\n\n  - Manage Mail  \n    · Players can read and process their mail data.  \n    · ※ PlayerMail must be added to the Default Player to work correctly.  \n    · ※ There is a maximum number of mail slots per player.  \n      If exceeded, mails with the nearest expiration date will be automatically deleted.\n\n  - Item Rewards  \n    · Use the `handleReceiveMailItems` handler and connect a callback function to process item rewards.\n\n────────────────────────────  \n[Mail Data Format]\n\n■ Required Data When Sending Mail  \n  - Title (String): Mail title  \n  - Message (String): Mail body  \n  - Sender (String): Sender name  \n  - RetentionDays (Integer): Number of days the mail will be retained  \n  - StartDate (Integer): Start date (UTC)  \n  - EndDate (Integer): Expiration date (UTC)  \n  - Items (Table): List of attached items\n\n■ Data After Receiving Mail  \n  - Title (String): Mail title  \n  - Message (String): Mail body  \n  - Sender (String): Sender name  \n  - DueDate (Integer): Expiration date (UTC)  \n  - IsRead (Bool): Read status (true / false)  \n  - Items (Table): List of attached items\n\n────────────────────────────────────────────\n[Recommendation]\n- It is recommended to set PlayerEntityAuthorityCheck to true in WorldConfig.\n- If this setting is false, the server function is exposed to all clients, which may lead to security vulnerabilities.\n\n────────────────────────────  \n[Sample Project Guide]\n\nThe sample project is designed to test GM and player mail functions using UI.\n\n  - Press F7 → Open GM Mail UI  \n    · Use the TimeOffset option at the top-left of the UI to adjust time.  \n    · ※ Time is based on UTC.\n\n  - Press F8 → Open Player Mailbox UI  \n    · Check received mail and handle attached items.\n\n  - Sample code for item rewards is written in the `PlayerInventory`.\n\n────────────────────────────\n]]",
+      "ModifyTime": "10/01/2025 08:29:16"
+    }
+  }
+}

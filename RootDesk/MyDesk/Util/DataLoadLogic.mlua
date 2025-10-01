@@ -14,6 +14,8 @@ script DataLoadLogic extends Logic
 		
 		self:AddStep("LoadDataSet_1", function() return self:LoadDataSet_1() end)
 		self:AddStep("LoadDataSet_2", function() return self:LoadDataSet_2() end)
+		self:AddStep("LoadDataSet_3", function() return self:LoadDataSet_3() end)
+		self:AddStep("LoadDataSet_4", function() return self:LoadDataSet_4() end)
 		self:AddStep("NotifyToServer", function()
 			if self:IsClient() then
 				_UserService.LocalPlayer.PlayerDBManager:NotifyWorldDataLoadCompleted()
@@ -31,6 +33,11 @@ script DataLoadLogic extends Logic
 		_GearCategoryEnum:Init()
 		_InventorySortEnum:Init()
 		_PlayerJobCodeEnum:Init()
+		_DayOfWeekEnum:Init()
+		_ActionConditionEnum:Init()
+		_AchievementCategoryEnum:Init()
+		_CycleEnum:Init()
+		_QuestCategoryEnum:Init()
 	end
 
 	method void AddStep(string name, any func)
@@ -72,11 +79,13 @@ script DataLoadLogic extends Logic
 
 	method boolean LoadDataSet_1()
 		if not _JobDataLogic:Load() then
+			log_error("Error loading JobData")
 			return false
 		end
 		wait(0.01)
 		
 		if not _JobBasicStatDataLogic:Load() then
+			log_error("Error loading JobBasicStatData")
 			return false
 		end
 		wait(0.01)
@@ -86,16 +95,43 @@ script DataLoadLogic extends Logic
 
 	method boolean LoadDataSet_2()
 		if not _ItemGearDataLogic:Load() then
+			log_error("Error loading ItemGearData")
 			return false
 		end
 		wait(0.01)
 		
 		if not _ItemDataLogic:Load() then
+			log_error("Error loading ItemData")
 			return false
 		end
 		wait(0.01)
 		
 		return true
+	end
+
+	method boolean LoadDataSet_3()
+		if not _AchievementDataSetLogic:Load() then
+			log_error("Error loading AchievementData")
+			return false
+		end
+		
+		if not _QuestDataSetLogic:Load() then
+			log_error("Error loading QuestData")
+			return false
+		end
+		
+		return true
+		
+	end
+
+	method boolean LoadDataSet_4()
+		if not _RankingConfigDataSetLogic:Load() then
+			log_error("Error loading AchievementData")
+			return false
+		end
+		
+		return true
+		
 	end
 
 	method boolean IsLoadSuccessAndWait()
