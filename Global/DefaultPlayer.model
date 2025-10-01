@@ -21,7 +21,9 @@
         "script.PlayerData",
         "script.PlayerJob",
         "script.PlayerInventory",
-        "script.PlayerDBManager"
+        "script.PlayerDBManager",
+        "script.PlayerWorldShop",
+        "script.PlayerShop"
       ],
       "Properties": [],
       "Values": [

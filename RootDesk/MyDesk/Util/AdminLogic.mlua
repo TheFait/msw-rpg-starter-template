@@ -7,7 +7,7 @@ script AdminLogic extends Logic
 	end
 
 	@ExecSpace("ClientOnly")
-	method void IsAdminLocalPlayer()
+	method boolean IsAdminLocalPlayer()
 		return true
 	end
 

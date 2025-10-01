@@ -1,0 +1,23 @@
+{
+  "Id": "",
+  "GameId": "",
+  "EntryKey": "directory://45e87b3f4d31406dba2cb6de2d1504fd",
+  "ContentType": "x-mod/directory",
+  "Content": "",
+  "Usage": 0,
+  "UsePublish": 1,
+  "UseService": 0,
+  "CoreVersion": "1.25.0.0",
+  "StudioVersion": "0.1.0.0",
+  "DynamicLoading": 0,
+  "ContentProto": {
+    "Use": "Json",
+    "Json": {
+      "entry_id": "directory://45e87b3f4d31406dba2cb6de2d1504fd",
+      "name": "Dialog",
+      "lock": false,
+      "folding": false,
+      "nameEditable": true
+    }
+  }
+}

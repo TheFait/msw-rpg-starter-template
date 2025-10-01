@@ -8,7 +8,7 @@ script PlayerData extends Component
 	property integer Dia = 0
 
 	@TargetUserSync
-	property integer Meso = 0
+	property integer Meso = 500
 
 	property integer FirstLoginTime = 0
 
@@ -19,6 +19,33 @@ script PlayerData extends Component
 	property boolean IsFirstLogin = false
 
 	property boolean IsSaveDB = false
+
+	property any onPurchaseItemGrant = nil
+
+	@ExecSpace("ServerOnly")
+	method void OnBeginPlay()
+		local playerShop = self.Entity.PlayerShop
+		if playerShop == nil then
+			log_error("PlayerShop component not found.")
+			return
+		end
+		
+		playerShop.onCurrencyValidate = function(totalPrice)
+			return self:HasEnoughCurrency(totalPrice)
+		end
+		
+		playerShop.onPurchase = function(shopId, count)
+			return self:PurchaseItem(shopId, count)
+		end
+		
+		playerShop.onPurchaseSuccess = function(shopId, count)
+			self:OnPurchaseSuccess(shopId, count)
+		end
+		
+		playerShop.onPurchaseFailed = function(shopId, count, reason)
+			self:OnPurchaseFailed(shopId, count, reason)
+		end
+	end
 
 	@ExecSpace("ServerOnly")
 	method boolean LoadFromDB(table loadKeys)
@@ -60,6 +87,8 @@ script PlayerData extends Component
 		if self.IsFirstLogin then
 			-- Executes tasks on the first login.
 		end
+		
+		self:SyncMeso(self.Meso, self.Entity.PlayerComponent.UserId)
 		
 		return true
 	end
@@ -109,6 +138,91 @@ script PlayerData extends Component
 	method void SetExtra(string extra)
 		self.Extra = extra
 		self.IsSaveDB = true
+	end
+
+	method integer GetMeso()
+		return self.Meso
+	end
+
+	method boolean HasEnoughCurrency(integer amount)
+		if amount <= 0 then
+			return false
+		end
+		
+		if self.Meso+500 < amount then
+			return false
+		end
+		
+		return true
+	end
+
+	@ExecSpace("ServerOnly")
+	method boolean PurchaseItem(integer shopId, integer count)
+		if count <= 0 then
+			log_error("Invalid item count.")
+			return false
+		end
+		
+		local shopData = _ShopDataSetLogic:GetData(shopId)
+		if shopData == nil then
+			log_error("Item not found: ShopId = " .. shopId)
+			return false
+		end
+		
+		local totalPrice = shopData.Price * count
+		if not self:HasEnoughCurrency(totalPrice) then
+			log_error("Not enough currency.")
+			return false
+		end
+		
+		-- Implement the purchase logic here.
+		if self.onPurchaseItemGrant ~= nil then
+			self.onPurchaseItemGrant(shopData.RewardItemId, shopData.RewardItemCount * count)
+		else
+			local createParam = ItemCreateParamStruct()
+			createParam:Set(shopData.RewardItemId, shopData.RewardItemCount*count, nil)
+			
+			_ItemFactoryLogic:TryAddItem(self.Entity.PlayerComponent.UserId, createParam, ItemCreateResultStruct())
+		end
+		
+		-- Deduct the required currency
+		self.Meso = self.Meso - totalPrice
+		self.IsSaveDB = true
+		
+		self:SyncMeso(self.Meso, self.Entity.PlayerComponent.UserId)
+		return true
+	end
+
+	@ExecSpace("ServerOnly")
+	method void OnPurchaseSuccess(integer shopId, integer count)
+		log("Purchase successful: ID = " .. shopId .. ", Count = " .. count)
+		
+		-- Additional logic for successful purchase can be added here
+		
+		self:SendPurchaseCompletedEvent("", shopId, count, self.Entity.PlayerComponent.UserId)
+	end
+
+	@ExecSpace("ServerOnly")
+	method void OnPurchaseFailed(integer shopId, integer count, string reason)
+		log_error("Purchase failed: ID = " .. shopId .. ", Count = " .. count .. ", Reason = " .. reason)
+		
+		-- Additional logic for failed purchase can be added here
+		
+		self:SendPurchaseCompletedEvent(reason, shopId, count, self.Entity.PlayerComponent.UserId)
+	end
+
+	@ExecSpace("Client")
+	method void SendPurchaseCompletedEvent(string reason, integer shopId, integer count)
+		local evt = PurchaseCompletedEvent()
+		evt.Reason = reason
+		evt.ShopItemId = shopId
+		evt.Count = count
+		self.Entity:SendEvent(evt)
+	end
+
+	@ExecSpace("Client")
+	method void SyncMeso(integer meso)
+		self.Meso = meso
 	end
 
 end

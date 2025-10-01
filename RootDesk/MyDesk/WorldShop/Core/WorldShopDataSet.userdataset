@@ -1,0 +1,22 @@
+{
+  "Id": "",
+  "GameId": "",
+  "EntryKey": "userdataset://71325f34-ad71-4b0a-bc49-1bff4ec273a5",
+  "ContentType": "x-mod/userdataset",
+  "Content": "",
+  "Usage": 0,
+  "UsePublish": 1,
+  "UseService": 0,
+  "CoreVersion": "1.25.0.0",
+  "StudioVersion": "0.1.0.0",
+  "DynamicLoading": 0,
+  "ContentProto": {
+    "Use": "Json",
+    "Json": {
+      "name": "WorldShopDataSet",
+      "id": "71325f34-ad71-4b0a-bc49-1bff4ec273a5",
+      "serveronly": false,
+      "dynamicloading": 0
+    }
+  }
+}

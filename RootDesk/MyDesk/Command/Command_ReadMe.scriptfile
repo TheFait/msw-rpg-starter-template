@@ -1,0 +1,22 @@
+{
+  "Id": "",
+  "GameId": "",
+  "EntryKey": "scriptfile://b2b376be-c0f9-4a26-81cf-762b5982fff9",
+  "ContentType": "x-mod/scriptfile",
+  "Content": "",
+  "Usage": 0,
+  "UsePublish": 1,
+  "UseService": 0,
+  "CoreVersion": "1.25.0.0",
+  "StudioVersion": "0.1.0.0",
+  "DynamicLoading": 0,
+  "ContentProto": {
+    "Use": "Json",
+    "Json": {
+      "Name": "Command_ReadMe",
+      "Id": "b2b376be-c0f9-4a26-81cf-762b5982fff9",
+      "Script": "--[[\n# Command\nThis package provides an environment where you can execute the functions you have written, both in the maker and release environments.\n\n=======================================\n## Features\n\nAfter importing the package, press the \\ key during world play to open the command window.\nOnce the command window is open, the following functions can be performed:\n- Enter key / Execute button: Executes the currently entered command.\n- ESC key: Closes the command window.\n- [ key: Retrieves the command previously executed before the current one.\n- ] key: Retrieves the next command of the currently retrieved command.\n- Tab key: Autocompletes the currently entered keyword with the first candidate displayed below.\n- Clicking the candidate: Adds the candidate as the last keyword of the command.\n- Complex commands: If multiple commands are entered separated by \\n, they will be executed in the order they were entered.\n\nThis package can also be used on mobile devices. \nOn mobile, a \"Command\" button will appear in the top center, and pressing it will open the command window. \nOnce the command window is opened, two buttons will appear to the left of the Command button with the following functions:\n- Prev Command button: Retrieves the command previously executed before the current one.\n- Post Command button: Retrieves the next command of the currently retrieved command.\n\n=======================================\n## Installation\n\n1. This functionality requires permission checks. \nYou must fill in the conditions for the empty method AdminLogic:IsAdmin according to the world’s permissions.\n\n2. You need to input the UI path to be created in UICommandLogic.UIPath.\nBy default, it is set to \"/ui/DefaultGroup\".\n\n=======================================\n## How to Add Commands\n\nCommands are divided into two types: client-side commands and server-side commands. \nClient-side commands are listed in ClientCommandLogic. \nServer-side commands are listed in ServerCommandLogic. \nThe last parameter of the server command function is the user ID of the person who executed the command.\n\nThe package includes test commands. You can refer to these to add your own commands. \nBe careful to avoid overlapping client-side and server-side commands when adding new ones. \nExample: Client: \"test hello\", Server: \"test hello\"\n\nReserved keywords like func, desc, num, and string are used, so they cannot be used as command keywords.\n\n=======================================\n## Happy Coding!\n]]",
+      "ModifyTime": "09/30/2025 21:34:07"
+    }
+  }
+}

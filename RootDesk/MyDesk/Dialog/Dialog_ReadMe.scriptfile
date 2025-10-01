@@ -1,0 +1,22 @@
+{
+  "Id": "",
+  "GameId": "",
+  "EntryKey": "scriptfile://15a6dd5a-a15d-45b4-b16d-2395911f535f",
+  "ContentType": "x-mod/scriptfile",
+  "Content": "",
+  "Usage": 0,
+  "UsePublish": 1,
+  "UseService": 0,
+  "CoreVersion": "1.25.0.0",
+  "StudioVersion": "0.1.0.0",
+  "DynamicLoading": 0,
+  "ContentProto": {
+    "Use": "Json",
+    "Json": {
+      "Name": "Dialog_ReadMe",
+      "Id": "15a6dd5a-a15d-45b4-b16d-2395911f535f",
+      "Script": "--[[\n# Dialog\nThis feature provides a dialogue UI that displays text one character at a time.\n\n=======================================\n## Usage\n\nYou can open the sample dialog using the Alpha2 key.\n\n=======================================\n## Features\n\n1. Start Dialogue \nBy entering the desired DialogId into the DialogLogic:StartDialog method, the dialogue corresponding to the entered DialogId will start.\n\n2. Move to the next line of dialogue \nOnce the dialogue has been fully displayed, pressing the Space key will move to the next line. \nIf you press the Space key while the dialogue is still being displayed, the current line will finish, and you will be able to move to the next line.\n\n3. Choose from dialogue options \nOnce the dialogue has been fully displayed, if there are any selectable options in that line, they will appear in the UI. \nBy selecting an option, the corresponding dialogue will be displayed.\n\n=======================================\n## Installation\n\n1. UI Path Configuration \nYou need to set the spawn paths for the dialogue UI. \nThe ParentUIPath can be modified in DialogLogic. \nBy default, it is set to \"/ui/DefaultGroup\".\n\n2. Dialogue Data Configuration \nCurrently, there is example dialogue data, but in order for the creator to create the desired dialogue, the data must be modified.\n\nThe DialogDataSet is a DataSet used for the dialogue, and the Dialog Data is a list-style table made up only of Dialog Script Data. \ne.g., Dialog Data = {DialogScriptData1, DialogScriptData2, DialogScriptData3, ...}\n\nWhen storing multiple pieces of data in a single cell, use a delimiter to separate them. \nThe delimiter used is DialogDataLogic.DataSetSplitSeparator.\n\n3. @Nick Keyword \nIf you want to display the current player's name in the dialogue or options, simply enter the DialogDataLogic.NicknameMarker keyword into the DataSet.\n\n4. Highlighting Specific Words \nIf there is a sentence you want to emphasize when the dialogue is displayed, wrap the sentence with the same keyword as DialogDataLogic.HighlightMarker in the dialogue data. \nIt’s recommended to use a single character special symbol that is rarely used for DialogDataLogic.HighlightMarker. \nThe highlighted color is controlled by DialogDataLogic.HighlightHexcode.\n\n=======================================\n## Dialog Data Structure\n\nDialogId: All Dialog Script Ids in a single dialog share the same DialogId.\n\nScriptId: The Id of the dialogue line.\n\nCharacterName: The name of the character speaking.\n\nCharacterScript: The dialogue of the character speaking.\n\nPortraitRUID: The RUID of the portrait of the character speaking.\n\nSelectionScripts: The text displayed in the dialogue options. \nTo store this data, separate the dialogue options by using a delimiter within a single cell.\n\nSelectionScriptIds: The ScriptId of the next line of dialogue when a particular option is selected. \nTo store this data, separate the next dialogue’s ScriptIds for each option with a delimiter within a single cell.\n\n=======================================\n## License\n\nThis project is licensed under the MIT License.\\nYou are free to use, modify, and distribute this project.\n\nHowever, the software is provided \\\"as is\\\", without warranty of any kind.\\nFor more details, please see the LICENSE.(https://opensource.org/licenses/MIT)\n\n=======================================\n## Happy Coding!\n]]",
+      "ModifyTime": "09/30/2025 21:39:35"
+    }
+  }
+}

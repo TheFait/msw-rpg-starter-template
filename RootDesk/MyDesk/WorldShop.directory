@@ -1,0 +1,23 @@
+{
+  "Id": "",
+  "GameId": "",
+  "EntryKey": "directory://4bae19b39f2c4c55b808678c69dd6b6c",
+  "ContentType": "x-mod/directory",
+  "Content": "",
+  "Usage": 0,
+  "UsePublish": 1,
+  "UseService": 0,
+  "CoreVersion": "1.25.0.0",
+  "StudioVersion": "0.1.0.0",
+  "DynamicLoading": 0,
+  "ContentProto": {
+    "Use": "Json",
+    "Json": {
+      "entry_id": "directory://4bae19b39f2c4c55b808678c69dd6b6c",
+      "name": "WorldShop",
+      "lock": false,
+      "folding": false,
+      "nameEditable": true
+    }
+  }
+}

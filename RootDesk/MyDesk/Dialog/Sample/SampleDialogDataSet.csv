@@ -1,0 +1,5 @@
+﻿DialogId,ScriptId,PortraitRUID,CharacterName,CharacterScript,SelectionScripts,SelectionScriptIds
+Tutorial,T_1,660bfa18a9ab4562a1f9aabe2d1c90c5,Aris,Hi there *@Nick*! Shall I guide you through the *tutorial*? Liv and I have worked hard on it!,Umm..,T_2
+Tutorial,T_2,,@Nick,I don't need the *tutorial* .,Look at Aris.|Look at Liv.,T_3|T_4
+Tutorial,T_3,4a878f605d384370a4e3f41413e46064,Aris,"Alright then, I should have known you don't need the tutorial *@Nick*. My apologies, I'll take you to the *lobby* now.",,
+Tutorial,T_4,4c93747a7708407bbd2c8a7792a436f5,Liv,...*...*,,

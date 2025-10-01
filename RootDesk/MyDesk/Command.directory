@@ -1,0 +1,23 @@
+{
+  "Id": "",
+  "GameId": "",
+  "EntryKey": "directory://b23742125f9d4179a6d7728e3a62d9eb",
+  "ContentType": "x-mod/directory",
+  "Content": "",
+  "Usage": 0,
+  "UsePublish": 1,
+  "UseService": 0,
+  "CoreVersion": "1.25.0.0",
+  "StudioVersion": "0.1.0.0",
+  "DynamicLoading": 0,
+  "ContentProto": {
+    "Use": "Json",
+    "Json": {
+      "entry_id": "directory://b23742125f9d4179a6d7728e3a62d9eb",
+      "name": "Command",
+      "lock": false,
+      "folding": false,
+      "nameEditable": true
+    }
+  }
+}

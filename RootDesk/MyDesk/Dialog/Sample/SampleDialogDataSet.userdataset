@@ -1,0 +1,22 @@
+{
+  "Id": "",
+  "GameId": "",
+  "EntryKey": "userdataset://68885d7c-4d3b-4089-8763-a1fc2c1918e9",
+  "ContentType": "x-mod/userdataset",
+  "Content": "",
+  "Usage": 0,
+  "UsePublish": 1,
+  "UseService": 0,
+  "CoreVersion": "1.25.0.0",
+  "StudioVersion": "0.1.0.0",
+  "DynamicLoading": 0,
+  "ContentProto": {
+    "Use": "Json",
+    "Json": {
+      "name": "SampleDialogDataSet",
+      "id": "68885d7c-4d3b-4089-8763-a1fc2c1918e9",
+      "serveronly": false,
+      "dynamicloading": 0
+    }
+  }
+}

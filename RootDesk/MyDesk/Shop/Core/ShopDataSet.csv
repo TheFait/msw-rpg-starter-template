@@ -1,0 +1,2 @@
+﻿ShopItemId,Name,Desc,Price,IconRUID,RewardItemId,RewardItemCount,PurchaseLimit,StartDate,EndDate
+2,StaminaPot,Restores 50 Stamina when consumed,100,323920d2805d4ec1aa85eca9e3e1cab2,500001,1,10,,
