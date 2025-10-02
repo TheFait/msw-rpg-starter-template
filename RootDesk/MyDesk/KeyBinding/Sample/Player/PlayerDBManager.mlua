@@ -88,6 +88,10 @@ script PlayerDBManager extends Component
 		if not self:OnLoadedDataFromDB(loadedData) then
 			return false
 		end
+
+		if not self:PostOnLoadedDataFromDB() then
+			return false
+		end
 		
 		return true
 	end
@@ -132,6 +136,29 @@ script PlayerDBManager extends Component
 			return false
 		end
 		
+		return true
+	end
+
+	@ExecSpace("ServerOnly")
+	method boolean PostOnLoadedDataFromDB()
+		local playerEntity = self.Entity
+
+		if not playerEntity.PlayerData:PostOnLoadedDataFromDB() then
+			return false
+		end
+
+		if not playerEntity.PlayerAchievement:PostOnLoadedDataFromDB() then
+			return false
+		end
+
+		if not playerEntity.PlayerQuest:PostOnLoadedDataFromDB() then
+			return false
+		end
+
+		if not playerEntity.PlayerRanking:PostOnLoadedDataFromDB() then
+			return false
+		end
+
 		return true
 	end
 

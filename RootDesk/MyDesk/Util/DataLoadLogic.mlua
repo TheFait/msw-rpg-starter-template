@@ -126,9 +126,10 @@ script DataLoadLogic extends Logic
 
 	method boolean LoadDataSet_4()
 		if not _RankingConfigDataSetLogic:Load() then
-			log_error("Error loading AchievementData")
+			log_error("Error loading RankingConfig")
 			return false
 		end
+		_RankingDataStorageLogic:InitAndWait()
 		
 		return true
 		

@@ -19,4 +19,3 @@ Starter template for MapleStory Worlds RPG like games. Includes a collection of 
 - Achievements (F1 for sample UI, F2 for admin tool)
 - Quests (4 for sample UI, 5 for admin tool)
 - Advanced Ranking (6, 7, 8)
-  - NOTE: Some issues in viewing the ranking UI
